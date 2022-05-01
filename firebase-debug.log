@@ -1,0 +1,33 @@
+[debug] [2022-05-01T10:42:26.570Z] ----------------------------------------------------------------------
+[debug] [2022-05-01T10:42:26.573Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\quang\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2022-05-01T10:42:26.573Z] CLI Version:   10.7.2
+[debug] [2022-05-01T10:42:26.573Z] Platform:      win32
+[debug] [2022-05-01T10:42:26.573Z] Node Version:  v14.18.0
+[debug] [2022-05-01T10:42:26.574Z] Time:          Sun May 01 2022 17:42:26 GMT+0700 (Indochina Time)
+[debug] [2022-05-01T10:42:26.574Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-01T10:42:26.654Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-01T10:42:26.654Z] > authorizing via signed-in user (qhuy989@gmail.com)
+[debug] [2022-05-01T10:42:26.655Z] [iam] checking project fir-01-dcd1c for permissions ["firebase.projects.get"]
+[debug] [2022-05-01T10:42:26.657Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-01-dcd1c:testIamPermissions [none]
+[debug] [2022-05-01T10:42:26.657Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-01-dcd1c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-05-01T10:42:27.650Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-01-dcd1c:testIamPermissions 200
+[debug] [2022-05-01T10:42:27.651Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-01-dcd1c:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-05-01T10:42:27.653Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-01-dcd1c [none]
+[debug] [2022-05-01T10:42:28.174Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-01-dcd1c 200
+[debug] [2022-05-01T10:42:28.174Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-01-dcd1c {"projectId":"fir-01-dcd1c","projectNumber":"154644761466","displayName":"firebase01","name":"projects/fir-01-dcd1c","resources":{"hostingSite":"fir-01-dcd1c","storageBucket":"fir-01-dcd1c.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from 'D:\ĐỒ ÁN CUỐI CÙNG\test_hosting02'...
+[info] 
+[debug] [2022-05-01T10:42:28.178Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-01-dcd1c/sites 
+[debug] [2022-05-01T10:42:29.524Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-01-dcd1c/sites 200
+[debug] [2022-05-01T10:42:29.524Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/fir-01-dcd1c/sites {"sites":[{"name":"projects/fir-01-dcd1c/sites/fir-01-dcd1c","defaultUrl":"https://fir-01-dcd1c.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-05-01T10:42:29.524Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fir-01-dcd1c/webApps/-/config [none]
+[debug] [2022-05-01T10:42:30.217Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fir-01-dcd1c/webApps/-/config 200
+[debug] [2022-05-01T10:42:30.217Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fir-01-dcd1c/webApps/-/config {"projectId":"fir-01-dcd1c","storageBucket":"fir-01-dcd1c.appspot.com","locationId":"us-central","apiKey":"AIzaSyBkNM__Z_FcbufFsIwEO-hPr2twU0smO4w","authDomain":"fir-01-dcd1c.firebaseapp.com","messagingSenderId":"154644761466"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] +  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: 127.0.0.1 - - [01/May/2022:10:42:33 +0000] "GET / HTTP/1.1" 200 1721 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/May/2022:10:42:33 +0000] \"GET / HTTP/1.1\" 200 1721 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/May/2022:10:42:33 +0000] "GET /%PUBLIC_URL%/favicon.ico HTTP/1.1" 500 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/May/2022:10:42:33 +0000] \"GET /%PUBLIC_URL%/favicon.ico HTTP/1.1\" 500 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/May/2022:10:42:33 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/May/2022:10:42:33 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
+[info] i  hosting: 127.0.0.1 - - [01/May/2022:10:42:35 +0000] "GET /%PUBLIC_URL%/manifest.json HTTP/1.1" 500 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [01/May/2022:10:42:35 +0000] \"GET /%PUBLIC_URL%/manifest.json HTTP/1.1\" 500 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36\""}}
